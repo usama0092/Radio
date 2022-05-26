@@ -1,29 +1,209 @@
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">    
-<div class="navbar navbar-inverse">
-        <div class="container-fluid">
-            <div class="row">
-                <div class="col-lg-12">
+<!DOCTYPE html>
+<html>
 
-                    <div class="navbar-header">
-                        <button class="navbar-toggle" data-target="#mobile_menu" data-toggle="collapse"><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button>
-                        <a href="#" class="navbar-brand">Cards</a>
-                    </div>
+<head>
+   
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Untitled</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<style>
 
-                    <div class="navbar-collapse collapse" id="mobile_menu">
-                        <ul class="nav navbar-nav">
-                            <li><a href="card1.html">Card 1</a></li>
+.team-grid {
+  color:#191a1c;
+  background-color:#fff;
+}
+
+.team-grid p {
+  color:#7d8285;
+}
+
+.team-grid h2 {
+  font-weight:bold;
+  margin-bottom:40px;
+  padding-top:40px;
+  color:inherit;
+}
+
+@media (max-width:767px) {
+  .team-grid h2 {
+    margin-bottom:25px;
+    padding-top:25px;
+    font-size:24px;
+  }
+}
+
+.team-grid .intro {
+  font-size:16px;
+  max-width:500px;
+  margin:0 auto;
+}
+
+.team-grid .intro p {
+  margin-bottom:0;
+}
+
+.team-grid .people {
+  padding:50px 0;
+}
+
+.team-grid .item {
+  margin-bottom:30px;
+}
+
+.team-grid .item .box {
+  text-align:center;
+  background-repeat:no-repeat;
+  background-size:cover;
+  background-position:center;
+  height:280px;
+  position:relative;
+  overflow:hidden;
+}
+
+.team-grid .item .cover {
+  position:absolute;
+  top:0;
+  left:0;
+  width:100%;
+  height:100%;
+  background-color:rgba(31,148,255,0.75);
+  transition:opacity 0.15s ease-in;
+  opacity:0;
+  padding-top:80px;
+  color:#fff;
+  text-shadow:1px 1px 1px rgba(0,0,0,0.15);
+}
+
+.team-grid .item:hover .cover {
+  opacity:1;
+}
+
+.team-grid .item .name {
+  font-weight:bold;
+  margin-bottom:8px;
+}
+
+.team-grid .item .title {
+  text-transform:uppercase;
+  font-weight:bold;
+  color:#bbd8fb;
+  letter-spacing:2px;
+  font-size:13px;
+  margin-bottom:20px;
+}
+
+.team-grid .social {
+  font-size:18px;
+}
+
+.team-grid .social a {
+  color:inherit;
+  margin:0 10px;
+  display:inline-block;
+  opacity:0.7;
+}
+
+.team-grid .social a:hover {
+  opacity:1;
+}
+
+
+
+</style>
+
+<body>
+
+<nav class="navbar navbar-expand-sm bg-success navbar-dark">
+  <ul class="navbar-nav">
+ <a class="navbar-brand" href="#">
+    <img src="logo.png" alt="logo" style="width:50px;">
+  </a>
+    <li class="nav-item active">
+      <a class="nav-link" href="#"><h2>Cards for Radio Pakistan</h2> </a>
+    </li>
+    
+  </ul>
+</nav>
+
+
+
+    <div class="team-grid">
+        <div class="container">
+            <div class="intro">
+                <h2 class="text-center">All Cards </h2>
+            
+            </div>
+            <div class="row people">
+
+	     
+                <div class="col-md-4 col-lg-3 item">
+                    <a href="tweetcard.html"><div class="box" style="background-image:url(tweetcard.png)">
+                        <div class="cover">
+                            <h3 class="name">Social Media</h3>
+                            <p class="title">Card 1</p>
                             
-                           	 <li><a href="card 2/card2.html">Card 2</a></li>
-					<li><a href="tweetcard.html">Tweet card</a></li>
-                            
-                        </ul>
-                        
-
-                        
-                    </div>
+                        </div>
+                    </div></a>
                 </div>
+	   	
+		<div class="col-md-4 col-lg-3 item">
+                    <a href="card1.html"><div class="box" style="background-image:url(card2.png)">
+                        <div class="cover">
+                            <h3 class="name">Social Media</h3>
+                            <p class="title">Card 2</p>
+                            
+                        </div>
+                    </div></a>
+                </div>
+
+		<div class="col-md-4 col-lg-3 item">
+                    <a href="3/card3.html"><div class="box" style="background-image:url(3/3.png)">
+                        <div class="cover">
+                            <h3 class="name">Social Media</h3>
+                            <p class="title">Card 3</p>
+                            
+                        </div>
+                    </div></a>
+                </div>
+		<div class="col-md-4 col-lg-3 item">
+                    <a href="4/card4.html"><div class="box" style="background-image:url(4/4.png)">
+                        <div class="cover">
+                            <h3 class="name">Social Media</h3>
+                            <p class="title">Card 4</p>
+                            
+                        </div>
+                    </div></a>
+                </div>
+                <div class="col-md-4 col-lg-3 item">
+                    <a href="5/card5.html"><div class="box" style="background-image:url(5/5.png)">
+                        <div class="cover">
+                            <h3 class="name">Social Media</h3>
+                            <p class="title">Card 4</p>
+                            
+                        </div>
+                    </div></a>
+                </div>
+		 <div class="col-md-4 col-lg-3 item">
+                    <a href="6/card6.html"><div class="box" style="background-image:url(6/6.png)">
+                        <div class="cover">
+                            <h3 class="name">Social Media</h3>
+                            <p class="title">Card 4</p>
+                            
+                        </div>
+                    </div></a>
+                </div>
+
+
+
+
             </div>
         </div>
     </div>
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+</body>
+
+</html>

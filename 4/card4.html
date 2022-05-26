@@ -2,30 +2,28 @@
 <html>
 <head>
 <meta charset=utf-8 />
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script type="text/javascript" src="jquery.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
      <style>
 	     .content {
-  max-width: 1046px;
+  max-width: 850px;
   margin: auto;
 }
 		p{
-	    
-            color: black;
+			text-shadow: 4px 3px 4px #000000;
+            color: white;
             position: absolute;
-            width: 1080px;
-            left: 115px;
-            top: 700px;
-            font-size: 55px;
-	        text-align: center;
-}
-		
+            width: 715px;
+            left: 40px;
+            top: 345px;
+            font-size: 30px;
+		}
 		#maindiv{
 			position: relative; 
 			left: 0; 
 			top: 0;
-			width: 1280px;
-			height: 1118px;
+			width: 850px;
+			height: 478px;
 		}
         .fishes
 		{
@@ -45,30 +43,30 @@
             align-items: center;
 		}
     </style>
-</head> 
-<body>
-<a href="index.html">Go Back</a> 
+</head>
+<body><a href="../index.html">Go Back</a> </br>
 	<div id="includedContent"></div>
 	<div class="content">
    	<div class="center">
-        Enter Headline: <input type="text" id="test3" value="text here">
+        Enter Headline: <input type="text" id="test3" value="320">
         <button onclick="myFun()">Place Headline</button>
         <br/>
         <button onclick="myFunction()">Capture</button>
         <input type="file" name="file" id="profile-img">
     </div>
-    <div id="maindiv">
-	
-        <img id="profile-img-tag" width="1280px" height="818px" src="" class="fishes"/>
-        <img id="profile-img-tag" width="1280px" height="1100" src="test.png" class="fish"/>
-        <p id="headline">text here</p>
+    <div id="maindiv"  >
+        <img id="profile-img-tag" width="850px" height="478px" src="" class="fishes"/>
+        <img width = "850px" height="478px" src="second.png" class="fish"/>
+        <p id="headline">320</p>
     </div>
 
 
     <div id="#previewImage" >
-    
+    </div>
+	    <div class="center">
+       Design By:  <a href="https://www.facebook.com/UsmanTahirKiani">Usman Tahir</a> 
+    </div>
 </div>
-<div style="text-align: center;"><h2>Made by Muhammad Usama Siddiqui</h2></div>
 </body>
 <script type="text/javascript">
 	$(function(){
@@ -106,7 +104,6 @@
     if(name == ""){
     $("p").text("Please enter headline here");
     }else{
-        prompt(name)
 	    $("p").text(name);
     }
 	
