@@ -1,0 +1,126 @@
+
+<html>
+<head>
+<meta charset=utf-8 />
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
+     <style>
+	     .content {
+  max-width: 1046px;
+  margin: auto;
+}
+		p{
+            color: black;
+            font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            position: absolute;
+            width: 1080px;
+            left: 115px;
+            top: 700px;
+            font-size: 60px;
+	        text-align: center;
+            line-height: 1.4;
+            font-weight: bold;
+}
+		
+		#maindiv{
+			position: relative; 
+			left: 0; 
+			top: 0;
+			width: 1280px;
+			height: 1118px;
+		}
+        .fishes
+		{
+			position: relative;
+			top: 0;
+			left: 0;
+		}
+		.fish
+		{
+			position: absolute;
+			top: 0px;
+			left: 0px;
+		}
+		.center{
+		    display: flex;
+            justify-content: center;
+            align-items: center;
+            
+		}
+        .highlight {
+        background-color: #21640d; /* Green background color */
+        color: white; /* White text color */
+        }
+    </style>
+</head> 
+<body>
+<a href="../index.html">Go Back</a> 
+	<div id="includedContent"></div>
+	<div class="content">
+   	<div class="center">
+        <input type="text" id="textField1" placeholder="Enter highlight text">
+        <input type="text" id="textField2" placeholder="Enter text">
+        <input type="text" id="textField3" placeholder="Enter highlight text">
+        <button onclick="myFun()">Place Headline</button>
+
+        <button onclick="myFunction()">Capture</button>
+        <input type="file" name="file" id="profile-img">
+    </div>
+    <div id="maindiv">
+	
+        <img id="profile-img-tag" width="1280px" height="1118px" src="" class="fishes"/>
+        <img id="profile-img-tag" width="1280px" height="1118px" src="test.png" class="fish"/>
+        <p id="headline">text here</p>
+    </div>
+
+
+    <div id="#previewImage" >
+    
+</div>
+<div style="text-align: center;"><h2>Made by Muhammad Usama Siddiqui</h2></div>
+</body>
+<script type="text/javascript">
+	$(function(){
+      $("#includedContent").load("Nav.html"); 
+    });
+    
+    function myFunction() {
+        html2canvas(document.querySelector("#maindiv")).then(canvas => {
+            document.getElementById("#previewImage").appendChild(canvas)
+        });
+    };
+    function readURL(input) {
+        if (input.files && input.files[0]) {
+            var reader = new FileReader();
+            
+            reader.onload = function (e) {
+                $('#profile-img-tag').attr('src', e.target.result);
+            }
+            reader.readAsDataURL(input.files[0]);
+        }
+    };
+
+    $("#profile-img").change(function(){
+        readURL(this);
+    });
+
+    function myFunhighlight() {
+        var x = $("#test3").val();
+        $("#headline").text(x);
+    };
+
+	 function myFun() {
+        var x = $("#textField1").val();
+        var y = $("#textField2").val();
+        var z = $("#textField3").val();
+
+        $("#headline").text(x);
+
+        const concatenatedText = `<span class="highlight">${x}</span> ${y} <span class="highlight">${z}</span>`;
+        headline.innerHTML = concatenatedText;
+    };
+
+
+	
+</script>
+</html>
